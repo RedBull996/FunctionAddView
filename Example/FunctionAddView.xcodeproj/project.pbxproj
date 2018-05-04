@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		360DA8466BF268793F504514 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		360DA8466BF268793F504514 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		592A92D5D8E309F58105FFA8 /* Pods-FunctionAddView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionAddView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionAddView_Tests/Pods-FunctionAddView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FunctionAddView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionAddView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,10 +61,10 @@
 		68BBF9B41A198EFA8BFE70CA /* Pods-FunctionAddView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionAddView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionAddView_Example/Pods-FunctionAddView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		804164D153310019A40D71F7 /* Pods-FunctionAddView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionAddView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionAddView_Tests/Pods-FunctionAddView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		80D395B71845CC2C8A2E984F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		80D395B71845CC2C8A2E984F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB41630F9A3052BB771AA99C /* Pods-FunctionAddView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionAddView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionAddView_Example/Pods-FunctionAddView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		ACD8D66962EA3B88F99D19A0 /* FunctionAddView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FunctionAddView.podspec; path = ../FunctionAddView.podspec; sourceTree = "<group>"; };
+		ACD8D66962EA3B88F99D19A0 /* FunctionAddView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FunctionAddView.podspec; path = ../FunctionAddView.podspec; sourceTree = "<group>"; };
 		DB403A47887CC72DFD4E5209 /* Pods_FunctionAddView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunctionAddView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DE9C207A4F57165FE60E52 /* Pods_FunctionAddView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunctionAddView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "tz_skj@126.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = CT6UX43MB4;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -341,10 +344,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FunctionAddView_Example/Pods-FunctionAddView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FunctionAddView/FunctionAddView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunctionAddView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,9 +540,11 @@
 			baseConfigurationReference = 68BBF9B41A198EFA8BFE70CA /* Pods-FunctionAddView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CT6UX43MB4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunctionAddView/FunctionAddView-Prefix.pch";
 				INFOPLIST_FILE = "FunctionAddView/FunctionAddView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,9 +557,11 @@
 			baseConfigurationReference = AB41630F9A3052BB771AA99C /* Pods-FunctionAddView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CT6UX43MB4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunctionAddView/FunctionAddView-Prefix.pch";
 				INFOPLIST_FILE = "FunctionAddView/FunctionAddView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

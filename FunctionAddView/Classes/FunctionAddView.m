@@ -9,8 +9,6 @@
 #import "FunctionAddView.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "FunctionMenuView.h"
-#import "APresentViewController.h"
-#import <AudioToolbox/AudioToolbox.h>
 @implementation FunctionAddView
 - (instancetype)initWithFrame:(CGRect)frame functions:(NSMutableArray *)function {
     CGFloat min = MIN(CGRectGetWidth(frame), CGRectGetHeight(frame));

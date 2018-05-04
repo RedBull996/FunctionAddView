@@ -14,7 +14,7 @@
 #import "FunctionMenuView.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "FunctionMenuItem.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 @implementation FunctionMenuView
 
 - (instancetype)initWithFrame:(CGRect)frame functions:(NSMutableArray *)function {

@@ -1,0 +1,28 @@
+PODS:
+  - FunctionAddView (0.1.0):
+    - Masonry
+    - ReactiveCocoa (~> 2.5)
+  - Masonry (1.1.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - FunctionAddView (from `../`)
+
+EXTERNAL SOURCES:
+  FunctionAddView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FunctionAddView: d88dc67532535d8e815c14b4680c895cc97992b3
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: cf666dcfd5459b33ff36e2a594f2c955a1acebc1
+
+COCOAPODS: 1.4.0.beta.1

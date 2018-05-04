@@ -7,7 +7,7 @@
 //
 
 #import "FunctionMenuItem.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 @interface FunctionMenuItem()
 @property (nonatomic, strong) NSString *title;
