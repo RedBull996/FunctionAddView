@@ -1,0 +1,15 @@
+//
+//  FunctionAddView.h
+//  XMRyPersonal
+//
+//  Created by 宋克军 on 2018/4/13.
+//  Copyright © 2018年 company. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "FunctionMenuView.h"
+@interface FunctionAddView : UIView<FunctionMenuViewDelegate>
+@property (nonatomic, strong) UIButton *addButton;
+@property (nonatomic, strong) UIViewController *vc;
+- (instancetype)initWithFrame:(CGRect)frame functions:(NSMutableArray *)function;
+@end
