@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FunctionAddView_Example' do
+  pod 'FunctionAddView', :path => '../'
+
+  target 'FunctionAddView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
