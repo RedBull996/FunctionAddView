@@ -14,15 +14,20 @@ PODS:
 DEPENDENCIES:
   - FunctionAddView (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - ReactiveCocoa
+
 EXTERNAL SOURCES:
   FunctionAddView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  FunctionAddView: d88dc67532535d8e815c14b4680c895cc97992b3
+  FunctionAddView: 04bfbfb71759119922c9bb661f0a0973e7f91cc3
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
 PODFILE CHECKSUM: cf666dcfd5459b33ff36e2a594f2c955a1acebc1
 
-COCOAPODS: 1.4.0.beta.1
+COCOAPODS: 1.5.0

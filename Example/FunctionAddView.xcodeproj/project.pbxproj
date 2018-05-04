@@ -208,7 +208,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				9834609BBE28BA5135C5AC71 /* [CP] Embed Pods Frameworks */,
-				A2956FBBDC5CCD313604ECCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,8 +226,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				B0052F098613919F32F6DFA7 /* [CP] Embed Pods Frameworks */,
-				E2D75A9A3F5A788FFA844292 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,51 +353,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionAddView_Example/Pods-FunctionAddView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2956FBBDC5CCD313604ECCB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionAddView_Example/Pods-FunctionAddView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0052F098613919F32F6DFA7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionAddView_Tests/Pods-FunctionAddView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2D75A9A3F5A788FFA844292 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionAddView_Tests/Pods-FunctionAddView_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

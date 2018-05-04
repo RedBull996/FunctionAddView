@@ -22,7 +22,6 @@
         FunctionMenuView *subView = [[FunctionMenuView alloc] initWithFrame:CGRectZero functions:function];
         @weakify(self);
         subView.delegate = self;
-        static a = 1000;
         [tap.rac_gestureSignal subscribeNext:^(id x) {
             @strongify(self);
             [UIView animateWithDuration:0.15 animations:^{
@@ -34,7 +33,10 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = self.bounds;
         button.backgroundColor = [UIColor redColor];
-        [button setTitle:@"＋" forState:UIControlStateNormal];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSBundle *resourceBundle = [NSBundle bundleWithURL:[bundle URLForResource:@"FunctionAddView" withExtension:@"bundle"]];
+        UIImage* succ_image = [UIImage imageWithContentsOfFile:[resourceBundle pathForResource:@"add task@2x" ofType:@"png"]];
+        [button setImage:succ_image forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont systemFontOfSize:20];
         button.userInteractionEnabled = NO;
         [self addSubview:button];
