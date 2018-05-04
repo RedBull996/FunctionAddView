@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FunctionAddView/Classes/**/*'
+  s.source_files = 'FunctionAddView/Classes/**/*.{m,h}'
   
   # s.resource_bundles = {
   #   'FunctionAddView' => ['FunctionAddView/Assets/*.png']
